@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/rafont.css">
+    <link rel="stylesheet" href="css/paraia_multi_select.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Wham</title>
+  </head>
+  <body>
+    <!-- Top Header begain -->
+    <header class="header">
+      <div class="top-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="sm-align-center">
+                <a href="" class="navbar-brand">
+                  <img src="img/logo.jpg" alt="wham">
+                </a>
+                <form class="form-inline">
+                  <div class="input-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-green" type="button" id="button-addon2">Search</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center">
+              <ul class="nav top-header-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Offer Job</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hire Freelancer</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    MA
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-navigation">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Jobs Management </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Interview Management</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Automated Test Management</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Document</a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item post-job">
+                  <a class="nav-link" href="#">Post a Job <i class="ra-icon ra-right-arrow"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <!-- Page Title begain -->
+          <h2 class="main-heading less-b-m">Jobs management</h2>
+          <p class="sub-heading">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+
+          <div class="job-submit-wrap">
+            <form class="submit-form">
+              <div class="form-sec-wrapper" id="JobTilteDescription" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Language</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="job_title">Job Title</label>
+                  <input type="text" class="form-control" id="job_title" placeholder="">
+                </div>
+
+                <div class="form-group">
+                  <label for="Descriptions">Descriptions </label>
+                  <textarea class="form-control" id="Descriptions" rows="3" placeholder="Describe your job"></textarea>
+                </div>
+                <div class="add-more">
+                  <a href=""><i class=""></i> Add job title and Descriptions in more language</a>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="jobPublication">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="publicationFrom">Job publication from</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="publicationFrom"><i class="ra-icon ra-calendar"></i></span>
+                          </div>
+                          <input type="text" class="form-control" id="publicationFrom" placeholder="" aria-describedby="publicationFrom" required>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="publicationTo">Job publication to</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="publicationTo"><i class="ra-icon ra-calendar"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="publicationTo" placeholder="" aria-describedby="publicationTo" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="jobAvailability">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="availabilityFrom">Availability from</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="availabilityFrom"><i class="ra-icon ra-calendar"></i></span>
+                          </div>
+                          <input type="text" class="form-control" id="availabilityFrom" placeholder="" aria-describedby="availabilityFrom" required>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="availabilityTo">Availability to</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="availabilityTo"><i class="ra-icon ra-calendar"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="availabilityTo" placeholder="" aria-describedby="availabilityTo" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="LengthOfJob">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="availabilityFrom">Length of job</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="LengthOfJob">
+                <label for="" class="inline-custom-label">No end employment contract</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="inlineRadio1">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="inlineRadio2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="cooperation-Type">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="cooperationType">Legal cooperation type</label>
+                        <select class="form-control" id="cooperationType">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="fullRemote">
+                <label for="" class="inline-custom-label">Full remote</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="inlineRadio3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="inlineRadio4">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="HomeOffice">
+                <label for="" class="inline-custom-label">Home office possible</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="inlineRadio5">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="inlineRadio6">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="MinMaxDays">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="minDays">Min no. of days </label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="minDays"><i class="ra-icon ra-calendar"></i></span>
+                          </div>
+                          <input type="text" class="form-control" id="minDays" placeholder="" aria-describedby="minDays" required>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="maxDays">Max no. of days </label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="maxDays"><i class="ra-icon ra-calendar"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="maxDays" placeholder="" aria-describedby="maxDays" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="partTime">
+                <label for="" class="inline-custom-label">Part time possible</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="inlineRadio7">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="inlineRadio8">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="MinMaxPartTime">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="minPartTime">Min no. of days for part time</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="minPartTime"><i class="ra-icon ra-calendar"></i></span>
+                          </div>
+                          <input type="text" class="form-control" id="minPartTime" placeholder="" aria-describedby="minPartTime" required>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="maxPartTime">Max no. of days for part time</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="maxPartTime"><i class="ra-icon ra-calendar"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="maxPartTime" placeholder="" aria-describedby="maxPartTime" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="Salary">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="salary">Salary </label>
+                        <select class="form-control" id="salary">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="travelling">
+                <label for="" class="inline-custom-label">Regular travelling required</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="inlineRadio9">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="inlineRadio10">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="locationWorkTax">
+                <div class="row">
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="locationWork">locations of work </label>
+                        <select class="form-control" id="locationWork">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="locationTax">locations of tax residence</label>
+                        <select class="form-control" id="locationTax">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="visyByCompany">
+                <label for="" class="inline-custom-label">Visa can be obtained by company</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="visa1">
+                    <input class="form-check-input" type="radio" name="visa" id="visa1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="visa2">
+                    <input class="form-check-input" type="radio" name="visa" id="visa2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="workPermitByCompany">
+                <label for="" class="inline-custom-label">Work permit can be obtained by company</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="inlineRadio11">
+                    <input class="form-check-input" type="radio" name="workPermit" id="inlineRadio11" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="inlineRadio12">
+                    <input class="form-check-input" type="radio" name="workPermit" id="inlineRadio12" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="relocationPerson">
+                <label for="" class="inline-custom-label">Relocation help for person Only</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="inlineRadio13">
+                    <input class="form-check-input" type="radio" name="relocation" id="inlineRadio13" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="inlineRadio14">
+                    <input class="form-check-input" type="radio" name="relocation" id="inlineRadio14" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="relocationFamily">
+                <label for="" class="inline-custom-label">Relocation help for family</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="inlineRadio15">
+                    <input class="form-check-input" type="radio" name="relocationFamily" id="inlineRadio15" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="inlineRadio16">
+                    <input class="form-check-input" type="radio" name="relocationFamily" id="inlineRadio16" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="responsibilityLevel">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="salary">Responsibility level </label>
+                        <select class="form-control" id="salary">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="forBank">
+                <label for="" class="inline-custom-label">For Bank</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="bank1">
+                    <input class="form-check-input" type="radio" name="forBank" id="bank1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="bank2">
+                    <input class="form-check-input" type="radio" name="forBank" id="bank2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="financialSectior">
+                <label for="" class="inline-custom-label">For Financial Sector</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="financialSectior1">
+                    <input class="form-check-input" type="radio" name="financialSectior" id="financialSectior1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="financialSectior2">
+                    <input class="form-check-input" type="radio" name="financialSectior" id="financialSectior2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="publicSector">
+                <label for="" class="inline-custom-label">For Public Sector</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="publicSec1">
+                    <input class="form-check-input" type="radio" name="publicSector" id="publicSec1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="publicSec2">
+                    <input class="form-check-input" type="radio" name="publicSector" id="publicSec2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="schoolSector">
+                <label for="" class="inline-custom-label">For School Sector</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="School1">
+                    <input class="form-check-input" type="radio" name="schoolSector" id="School1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="School2">
+                    <input class="form-check-input" type="radio" name="schoolSector" id="School2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="gamblingSector">
+                <label for="" class="inline-custom-label">For Gambling Sector</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="gambling1">
+                    <input class="form-check-input" type="radio" name="gamblingSector" id="gambling1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="gambling2">
+                    <input class="form-check-input" type="radio" name="gamblingSector" id="gambling2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="tradingSector">
+                <label for="" class="inline-custom-label">For Trading Sector</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="tradingSector1">
+                    <input class="form-check-input" type="radio" name="tradingSector" id="tradingSector1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="tradingSector2">
+                    <input class="form-check-input" type="radio" name="tradingSector" id="tradingSector2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="openSource">
+                <label for="" class="inline-custom-label">For Open Source Sector</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="openSource1">
+                    <input class="form-check-input" type="radio" name="openSource" id="openSource1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="openSource2">
+                    <input class="form-check-input" type="radio" name="openSource" id="openSource2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="securityNeeded">
+                <label for="" class="inline-custom-label">Security Clearance Needed</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="securityNeeded1">
+                    <input class="form-check-input" type="radio" name="securityNeeded1" id="securityNeeded1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="securityNeeded2">
+                    <input class="form-check-input" type="radio" name="securityNeeded1" id="securityNeeded2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="Salary">
+                <div class="row">
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="salary">level Of Security Clearance If Needed</label>
+                        <input class="form-control" type="text" placeholder="">
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="Country">
+                <div class="row">
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="salary">Country of security clearance if needed</label>
+                        <input type="text" id="country-select" class="form-control rtl" name="brands" data-paraia-multi-select="true" placeholder="Select a brand">
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="mentallyDisabled">
+                <label for="" class="inline-custom-label">Suitable For Mentally Disabled</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="mentallyDisabled1">
+                    <input class="form-check-input" type="radio" name="mentallyDisabled" id="mentallyDisabled1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="mentallyDisabled2">
+                    <input class="form-check-input" type="radio" name="mentallyDisabled" id="mentallyDisabled2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="physicalDisabled">
+                <label for="" class="inline-custom-label">Suitable For Physically Disabled</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="physicalDisabled1">
+                    <input class="form-check-input" type="radio" name="physicalDisabled" id="physicalDisabled1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="physicalDisabled2">
+                    <input class="form-check-input" type="radio" name="physicalDisabled" id="physicalDisabled2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="onlyMentally">
+                <label for="" class="inline-custom-label">Only For Mentally Disabled</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="onlyMentally1">
+                    <input class="form-check-input" type="radio" name="onlyMentally" id="onlyMentally1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="onlyMentally2">
+                    <input class="form-check-input" type="radio" name="onlyMentally" id="onlyMentally2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="onlyPhysically">
+                <label for="" class="inline-custom-label">Only For Physically Disabled</label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label custom-radio" for="onlyPhysically1">
+                    <input class="form-check-input" type="radio" name="onlyPhysically" id="onlyPhysically1" value="option1">
+                    Yes <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label  custom-radio" for="onlyPhysically2">
+                    <input class="form-check-input" type="radio" name="onlyPhysically" id="onlyPhysically2" value="option2">
+                  No <span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="Country">
+                <div class="row">
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="salary">Programing Language</label>
+                        <input type="text" id="programing-language" class="form-control rtl" name="brands" data-paraia-multi-select="true" placeholder="Select a brand">
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="locationWorkTax">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="locationWork">Language</label>
+                        <select class="form-control" id="locationWork">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="locationTax">Expert Level</label>
+                        <select class="form-control" id="locationTax">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                </div>
+                <div class="add-more">
+                  <a href=""><i class=""></i> Add more language</a>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="locationWorkTax">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="locationWork">Age Min</label>
+                        <select class="form-control" id="locationWork">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="locationTax">Age Max</label>
+                        <select class="form-control" id="locationTax">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sec-wrapper" id="">
+                <div class="form-group">
+                  <label for="" class="inline-custom-label">Religion </label>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label custom-radio" for="religion1">
+                      <input class="form-check-input" type="radio" name="religion" id="religion1" value="option1">
+                      Yes <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label  custom-radio" for="religion2">
+                      <input class="form-check-input" type="radio" name="religion" id="religion2" value="option2">
+                    No <span class="checkmark"></span></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="salary">Select Religions</label>
+                        <input type="text" id="religions" class="form-control rtl" name="brands" data-paraia-multi-select="true" placeholder="Select Religion">
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="">
+                <div class="form-group">
+                  <label for="" class="inline-custom-label">Sexual Orientation </label>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label custom-radio" for="sexOrient1">
+                      <input class="form-check-input" type="radio" name="sexOrient" id="sexOrient1" value="option1">
+                      Yes <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label  custom-radio" for="sexOrient2">
+                      <input class="form-check-input" type="radio" name="sexOrient" id="sexOrient2" value="option2">
+                    No <span class="checkmark"></span></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="salary">Select Orientation</label>
+                        <input type="text" id="sexOrientation" class="form-control rtl" name="brands" data-paraia-multi-select="true" placeholder="Sexual Orientation">
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="">
+                <div class="form-group">
+                  <label for="" class="inline-custom-label">Gender</label>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label custom-radio" for="Gender1">
+                      <input class="form-check-input" type="radio" name="Gender" id="Gender1" value="option1">
+                      Yes <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label  custom-radio" for="Gender2">
+                      <input class="form-check-input" type="radio" name="Gender" id="Gender2" value="option2">
+                    No <span class="checkmark"></span></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="salary">Select Gender</label>
+                        <input type="text" id="selectGender" class="form-control rtl" name="brands" data-paraia-multi-select="true" placeholder="Select Gender">
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="">
+                <div class="form-group">
+                  <label for="" class="inline-custom-label">Nationality</label>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label custom-radio" for="Nationality1">
+                      <input class="form-check-input" type="radio" name="nationality" id="Nationality1" value="option1">
+                      Yes <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label  custom-radio" for="Nationality2">
+                      <input class="form-check-input" type="radio" name="nationality" id="Nationality2" value="option2">
+                    No <span class="checkmark"></span></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="salary">Select Nationality</label>
+                        <input type="text" id="nationality" class="form-control rtl" name="brands" data-paraia-multi-select="true" placeholder="Select Nationality">
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="salary">Certifications</label>
+                        <input type="text" id="certifications" class="form-control rtl" name="brands" data-paraia-multi-select="true" placeholder="Select Certifications">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="Descriptions">Other Certifications </label>
+                        <textarea class="form-control" id="Descriptions" rows="3" placeholder="Other Certifications"></textarea>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="locationWorkTax">
+                <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="locationWork">Job Type</label>
+                        <select class="form-control" id="locationWork">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="locationTax">Years of Experience</label>
+                        <select class="form-control" id="locationTax">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      </div>
+                  </div>
+                </div>
+                <div class="add-more">
+                  <a href=""><i class=""></i> Add more Job Type</a>
+                </div>
+              </div>
+
+              <div class="form-sec-wrapper" id="Country">
+                <div class="row">
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="salary">Skills</label>
+                        <input type="text" id="skills" class="form-control rtl" name="brands" data-paraia-multi-select="true" placeholder="Select a brand">
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="submit-button-wrap">
+                <button class="btn submit-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+    <!-- footer begain -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="logo-wrap">
+            <img class="img-fluid" src="img/logo_Footer.jpg" alt="wham">
+          </div>
+          <div class="footer-list-wrapp">
+            <div class="row">
+              <div class="col-md-3 col-6">
+                <h3 class="footer-title">Learn</h3>
+                <ul class="footer-list">
+                    <li><a href="">About </a></li>
+                    <li><a href="">Careers </a></li>
+                    <li><a href="">Legal &amp; privacy </a></li>
+                    <li><a href="">Support </a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-6">
+                <h3 class="footer-title">Search</h3>
+                <ul class="footer-list">
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Worker</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-6 ">
+                <h3 class="footer-title">About</h3>
+                <ul class="footer-list">
+                    <li><a href="">Privacy Policy </a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-6">
+                <h3 class="footer-title">Social Media</h3>
+                <ul class="footer-list">
+                    <li><a href="">Facebook </a></li>
+                    <li><a href="">Twitter </a></li>
+                    <li><a href="">Telegram</a></li>
+                    <li><a href="">Reddit </a></li>
+                    <li><a href="">Medium </a></li>
+                    <li><a href="">Newsroom </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="web-info">
+            © 2019 Wham .All rights reserved. <a href="">Terms &amp; Conditions</a> |  <a href="">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+   
+    
+    
+    
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/paraia_multi_select.min.js"></script>
+    <script src="js/custom.js" integrity="" crossorigin="anonymous"></script>
+  </body>
+</html>
